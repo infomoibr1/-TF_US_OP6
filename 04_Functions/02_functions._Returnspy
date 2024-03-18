@@ -1,0 +1,44 @@
+
+
+# Without Explicit Return ( == None as a return)
+def add1(x, y):
+    total = x + y 
+    print("The sum is:", total)
+    
+    
+
+# Single Return
+def add2(x,y):
+    return x + y
+
+# Multi Return
+def add3(x,y):
+    total = x + y
+    return total , "This is a message", True , 12.5
+
+
+
+ 
+# Consumer 
+
+add1(5, 8)
+
+
+total = add2(10, 20)
+print("Die Summe beträgt : ", total)
+
+
+
+result = add3(10,30)
+print(result)
+
+
+# Unpacking
+total, message, anwesend, temperature = add3(10,30)
+print(total, message, anwesend, temperature )
+
+
+
+
+result = add1(10,20)
+print(result)
