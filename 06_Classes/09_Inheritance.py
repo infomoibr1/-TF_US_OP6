@@ -18,9 +18,9 @@ class ElectricMotor:
 
 # Multi Inheritance
 class VW(Car, ElectricMotor):
-    def __init__(self, model, kz, gps) -> None:
+    def __init__(self, model, kz, gps, capa) -> None:
         super().__init__(model, kz)
-        
+        ElectricMotor.__init__(self, capa)
 
         self.gps = gps 
 
@@ -42,7 +42,7 @@ class Audi(Car):
 
 
 
-passat = VW("Passat", "Aa12345", True)
+passat = VW("Passat", "Aa12345", True, "2000")
 q3 = Audi("Q3", "BB12345", True)
 
 
